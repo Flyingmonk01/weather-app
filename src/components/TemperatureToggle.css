@@ -1,0 +1,25 @@
+/* TemperatureToggle.css */
+
+.temperature-toggle {
+    margin: 16px 0;
+  }
+  
+  .temp-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    color: black;
+  }
+  
+  .temp-button.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .temp-button:not(.active):hover {
+    background-color: #f0f0f0;
+  }
+  

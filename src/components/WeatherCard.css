@@ -1,0 +1,31 @@
+/* WeatherCard.css */
+
+.weather-card {
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .city {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .condition {
+    font-size: 18px;
+  }
+  
+  .weather-icon {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .temperature {
+    font-size: 32px;
+  }
+  
