@@ -29,7 +29,7 @@ const App = () => {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e42b791d847651faa0f615508b30e51c&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API}&units=metric`
       );
 
       if (response.status === 404) {
@@ -44,7 +44,7 @@ const App = () => {
       setNotFound(false); // Reset not found state if the city exists
 
       const forecastResponse = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=e42b791d847651faa0f615508b30e51c&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.REACT_APP_API}&units=metric`
       );
       const forecastData = await forecastResponse.json();
 
