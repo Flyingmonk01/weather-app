@@ -87,7 +87,7 @@ const App = () => {
                     city={weatherData.name}
                     temp={weatherData.main.temp}
                     condition={weatherData.weather[0].main}
-                    icon={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
+                    icon={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
                     unit={unit}
                   />
                   <TemperatureToggle unit={unit} setUnit={setUnit} />
@@ -98,7 +98,7 @@ const App = () => {
                         day={new Date(day.dt_txt).toLocaleDateString('en-US', { weekday: 'long' })}
                         high={day.main.temp_max}
                         low={day.main.temp_min}
-                        icon={`http://openweathermap.org/img/w/${day.weather[0].icon}.png`}
+                        icon={`https://openweathermap.org/img/w/${day.weather[0].icon}.png`}
                         unit={unit}
                       />
                     ))}

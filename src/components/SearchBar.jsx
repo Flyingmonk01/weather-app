@@ -12,7 +12,7 @@ const SearchBar = ({ setCity }) => {
 
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=4&appid=${process.env.REACT_APP_API}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=4&appid=${process.env.REACT_APP_API}`
       );
       const cities = await response.json();
       setFilteredCities(cities);
